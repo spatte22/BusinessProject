@@ -1,0 +1,73 @@
+/* Variables */
+
+:root {
+	--darkBlue: #002a54; /*complementary is ?? */
+	--midBlue: #0d5eaf;
+	--lightBlue: #378bde;
+	--barelyBlue: #8ac5ff;
+	--isItBlue: #dbecff;
+	--gray: #BCC6CC;
+	--white: white;
+	--black: black;
+	--aHover: ;
+	--shadowGray: #4f5254;
+}
+
+
+
+
+
+.fairyTaleWrapper {
+	margin: auto;
+	width: 90%;
+}
+
+.fairyTaleWrapper iframe {
+	float: right;
+	position: sticky;
+	box-shadow: 0 .75em .75em var(--shadowGray);
+}
+
+.fairyTaleTitles h1 {
+	font-size: 4em;
+	margin-bottom: -.25vh;
+}
+
+.fairyTaleCard {
+	border-radius: 2em;
+}
+
+.fairyTaleCard p {
+	text-align: center;
+	color: var(--white);
+	font-size: 3em;
+	font-family: "Simonetta";
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	margin-bottom: 1vh;
+	margin-top: -1vh;
+	z-index: 2;
+}
+
+.fairyTaleCard img {
+	z-index: 1;
+	top: 0;
+}
+
+.fairyTaleStory {
+	padding-right: 2em;
+	float: left;
+	width: 50%;
+}
+
+.instructions li {
+	margin-bottom: 1vw;
+}
+
+.fairyTaleStory h1 {
+	font-size: 3em;
+	color: var(--darkBlue);
+}
+
+.fairyTaleStory p {
+	margin-bottom: 3vh;
+}
