@@ -11,21 +11,33 @@
 	--black: black;
 	--aHover: ;
 	--shadowGray: #4f5254;
+	--buttonColor: #fc5744;
 }
 
 
-
+a,
+a:hover,
+a:visited {
+	text-decoration: none;
+}
 
 
 .fairyTaleWrapper {
 	margin: auto;
 	width: 90%;
+	height: auto;
 }
 
-.fairyTaleWrapper iframe {
+iframe {
 	float: right;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
 	position: sticky;
+	top: 4em;
 	box-shadow: 0 .75em .75em var(--shadowGray);
+
 }
 
 .fairyTaleTitles h1 {
@@ -33,14 +45,47 @@
 	margin-bottom: -.25vh;
 }
 
+.fairyTaleCardsContainer {
+	height: auto;
+	margin: auto;
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .fairyTaleCard {
 	border-radius: 2em;
+	width: 30vw;
+	height: 30vh;
+	box-shadow: 0em 1em 1em var(--shadowGray);
+	margin: 2em;
+	border: 1px solid var(--shadowGray);
+	overflow: hidden;
+	padding: 1em;
+}
+
+.fairyTaleCard:hover {
+	border-radius: 2em;
+	width: 30vw;
+	height: 30vh;
+	box-shadow: 0em 1em 1em var(--shadowGray);
+	margin: 2em;
+	border: 1px solid var(--shadowGray);
+	overflow: hidden;
+	cursor: pointer;
+	transform: scale(1.01);
+	transition: .3s ease-in-out;
+}
+
+.fairyTaleCard img {
+	
 }
 
 .fairyTaleCard p {
 	text-align: center;
 	color: var(--white);
-	font-size: 3em;
+	font-size: 4vh;
 	font-family: "Simonetta";
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	margin-bottom: 1vh;
@@ -55,12 +100,16 @@
 
 .fairyTaleStory {
 	padding-right: 2em;
-	float: left;
+	
 	width: 50%;
 }
 
 .instructions li {
 	margin-bottom: 1vw;
+}
+
+.instructions {
+	margin-bottom: 10vh;
 }
 
 .fairyTaleStory h1 {
@@ -70,4 +119,56 @@
 
 .fairyTaleStory p {
 	margin-bottom: 3vh;
+}
+
+.chunk1 {
+	margin-top: 7vh;
+
+}
+
+.chunkButton {
+	margin-top: 3vh;
+	padding: 1em 1em .5em .5em;
+	border-radius: 10px;
+	border: 1px solid var(--shadowGray);
+	width: 4em;
+	height: 2em;
+	cursor: pointer;
+}
+
+.chunkButton:hover,
+.chunkButton:active,
+.chunkButton:focus {
+	margin-top: 3vh;
+	padding: 1em 1em .5em .5em;
+	background-color: var(--buttonColor);
+	color: var(--white);
+	border-radius: 10px;
+	border: 1px solid var(--shadowGray);
+	width: 4em;
+	height: 2em;
+	cursor: pointer;
+}
+
+.turnRed {
+	background-color: var(--buttonColor);
+	color: var(--white);
+}
+
+.chunk2 {
+	margin-top: 3vh;
+	margin-left: 2vw;
+	overflow: hidden;
+	opacity: 0;
+	max-height: 0;
+	transition: .6s ease-in-out;
+}
+
+.chunk2.show {
+	opacity: 1;
+	max-height: 50em;
+}
+
+.active {
+	
 }

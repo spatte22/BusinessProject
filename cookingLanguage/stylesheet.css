@@ -11,6 +11,7 @@
 	--black: black;
 	--aHover: ;
 	--shadowGray: #4f5254;
+	--buttonColor: #fc5744;
 }
 
 
@@ -48,6 +49,10 @@
 }
 
 .sticky {
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 3;
@@ -163,8 +168,36 @@
 	/*border-top: 1px solid var(--black);*/
 }
 
-.foodLang {
-	background-image: url(personalPhotos/sardines.jpg);
+.heroFood {
+	background-image: url(images/foodShow/GreekFood.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+}
+
+.heroFood2 {
+	background-image: url(images/foodShow/oranges.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+}
+
+.heroArt {
+	background-image: url(images/artShow/abstract1.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+}
+
+.heroArt2 {
+	background-image: url(images/artShow/abstract2.jpg);
+	background-color: ;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -769,6 +802,37 @@
 
 
 /*  FOOD STYLES   */
+
+.instagram {
+	height: 70vh;
+	width: auto;
+	padding: 5vh 5vw 5vh 5vw;
+}
+
+.instagram h2 {
+	margin-bottom: 5vh;
+}
+
+.slideShow {
+	height: 60vh;
+}
+
+#slide1 {
+	height: 50vh;
+	border-radius: 20px;
+	box-shadow: 0 1em 1em .5em var(--shadowGray);
+	transition: 1s ease-in-out;
+}
+
+#slide1:hover {
+	transform: scale(1.05);
+	transition: transform .75s ease-in-out;
+}
+
+
+/* ART STYLES */ 
+
+
 
 
 

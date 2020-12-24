@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<title>Food | Margarita Papakosta</title> 
+<title>Cooking | Margarita Papakosta</title> 
 <link href="../stylesheet.css" rel="stylesheet" type="text/css" /> 
 <link rel="icon" type="image/png" href="../images/M_32.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Simonetta" />
@@ -19,8 +19,12 @@
 	<ul>
 		<li class="active">Cooking</a></li>
 		<li><a href="../art/art.html">Art</a></li>
-		<li><a href="../language/lang.html">Language</a>
-			
+		<li><a href="../language/lang.html"><div class="navDD">Language</a>
+			<div class="navDDContent">
+				<a href="">Student Portal</a>
+				<a href="../language/fairyTales/fairyTalePortal.html">Fables & Fairy Tales</a>
+			</div>
+		</div>
 		</li>
 	</ul>
 </div>
@@ -39,20 +43,34 @@
 </div> <!-- closes sticky -->
 
 <div id="englishMode">
-
-<div class="foodLang">
+<div class="blueGradient">
+<div class="heroFood">
 </div>
 
 <div class="videoPar">
 <h1>Cooking</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cf4O_87uW7Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div> <!-- closes videoPar -->
 
-
-
-
+<div class="instagram">
+	<h2>My Instagram Teaser:</h2>
+		<div class="slideShow">
+			<a href="https://www.instagram.com/margaritaines/" target=”_blank”><img src="../images/foodShow/instaFood1.jpg" alt="" id="slide1" /></a>
+		</div> <!-- closes slideShow -->	
+	
+	
+</div> <!-- closes instagram -->
+</div> <!-- closes blueGradient -->
 <div class="shadow-bottom">
 </div>
+
+<div class="heroFood2">
+<div class="shadow-bottom">
+</div>
+</div>
+
+
 <div class="footer">
 <table class="footerTable">
 	<tr>
@@ -60,7 +78,7 @@
 		<td><a href="https://www.linkedin.com/in/mpapakosta/" target=”_blank”><span class="iconHover"><img src="../images/linkedin.png" title="LinkedIn" /></a></span></td>
 		<td><span class="iconHover"><a href="https://www.wyzant.com/match/tutor/86927031" target="_blank"><img src="../images/wyzant.png" title="Wyzant" /></span></a></td>
 		<td><span onclick="contactEmail()" style="cursor: pointer;"><span class="iconHover"><img src="../images/emailIcon.png" title="Email" /></span></span></td>
-		
+		<td><a href="" target=”_blank”><span class="iconHover"><img src="../images/youtube1.png" title="YouTube" style="height: 20px; width: 20px;" /></a></span></td>
 	</tr>
 </table>
 <div class="copyright">
@@ -81,23 +99,9 @@
 </div> <!-- closes greekMode -->
 
 <script src="../margJS.js" type="text/javascript"></script>
-<script>
-function greekFunction () {
-	var checkBox = document.getElementById('checkbox');
-	var english = document.getElementById('englishMode');
-	var greek = document.getElementById('greekMode');
-	
-	if (checkBox.checked == true){
-		english.style.display = "none";
-	} else {
-		english.style.display = "block";
-	}
-	if (checkBox.checked == true) {
-		greek.style.display = "block";
-	} else {
-		greek.style.display = "none";
-	}
-}
-</script>
+<script src="../foodSlideshowJS.js"></script>
+<script src="../greekFunction.js" type="text/javascript"></script>
+
+
 </body>
 </html>
