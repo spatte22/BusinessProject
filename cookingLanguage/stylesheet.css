@@ -700,7 +700,42 @@
 	font-size: 6em;
 	margin-left: 8vw;
 }
-.tutoringLangS3 {
+.tutoringLangS3 table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-radius: 1em;
+	overflow: hidden;
+}
+.tutoringLangS3 td:hover {
+	background-color: var(--barelyBlue);
+	cursor: default;
+}
+.tutoringLangS3 th {
+	padding: 2vw;
+	color: white;
+}
+.tutoringLangS3 td {
+	padding: 2vw;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.freeHours {
+	font-size: .6em;
+	color: ;
+}
+
+.finePrint {
+	font-size: .8em;
+	margin: 8vw 0 0 8vw;
+}
+
+.finePrint ul {
+	list-style-type: none;
+}
+
+.finePrint ul.li {
 	
 }
 .tutoringLangS3 {
@@ -709,15 +744,7 @@
 .tutoringLangS3 {
 	
 }
-.tutoringLangS3 {
-	
-}
-.tutoringLangS3 {
-	
-}
-.tutoringLangS3 {
-	
-}
+
 
 
 
