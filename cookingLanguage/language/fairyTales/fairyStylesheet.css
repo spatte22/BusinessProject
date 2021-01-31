@@ -28,7 +28,50 @@ a:visited {
 	height: auto;
 }
 
-iframe {
+.stickyIframe {
+	float: right;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	position: sticky;
+	top: 4em;	
+	height: 365px;
+	transition: .5s;
+}
+
+.stickyIframe iframe {
+	box-shadow: 0 .75em .75em var(--shadowGray);
+}
+
+.iframeExpand {
+	width: 100px;
+	height: 50px;
+	background-color: black;
+	opacity: .75;
+	position: relative;
+	clear: both;
+	box-shadow: 0 .75em .75em var(--shadowGray);
+	transition: .5s;
+	cursor: pointer;
+	margin-top: -1.75em;
+}
+
+
+
+.iframeExpand p {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: white;
+	padding-top: 12px;
+	font-size: 25px;
+}
+
+.hide {
+	top: -16em;
+}
+/*iframe {
 	float: right;
 	position: -webkit-sticky;
 	position: -moz-sticky;
@@ -38,7 +81,7 @@ iframe {
 	top: 4em;
 	box-shadow: 0 .75em .75em var(--shadowGray);
 
-}
+}*/
 
 .fairyTaleTitles h1 {
 	font-size: 4em;
