@@ -340,6 +340,7 @@
 
 .nav li:hover {
 	border-bottom: 2px solid white;
+	
 }
 
 .active {
@@ -373,9 +374,10 @@
 .navDDContent a:hover {
   background-color: var(--gray);
   color: black;
+  
 }
 
-.navDD:hover .navDDContent {display: block;}
+.navDD:hover .navDDContent {display: block; }
 
 
 /* DROP-DOWN STYLES */
