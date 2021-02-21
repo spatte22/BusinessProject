@@ -15,6 +15,15 @@
 }
 
 
+/* HOMEPAGE */
+
+.homepageSpacer {
+	background-color: var(--darkBlue);
+	z-index: -100;
+	height: 100vh;
+}
+
+
 
 /* LANGUAGE SELECTOR */
 
@@ -30,7 +39,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
+	z-index: 5;
 }
 
 .language a:visited {
@@ -46,6 +55,7 @@
 	width: 100%;
 	z-index: 2;
 	position: absolute;
+	margin-bottom: 1em;
 }
 
 .sticky {
@@ -120,7 +130,7 @@
 	background: url(images/hero2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 90vh;
+	height: 82.5vh;
 	background-position: center;
 	text-align: center;
   display: -webkit-flex;
@@ -139,11 +149,13 @@
 .hero p {
 	text-align: center;
 	color: var(--white);
-	font-size: 5em;
+	font-size: 10vh;
 	font-family: "Simonetta";
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	margin-bottom: 1em;
 	margin-top: -1em;
+	position: absolute;
+	top: 1.5em;
 }
 
 .heroLang {
@@ -235,20 +247,24 @@
 }
 
 
-/* landing page 3 category options */
+/* LANDING PAGE 3 CATEGORY OPTIONS */
+
 .options3 {
 	padding: 1em 0 0 0;
 	text-align: center;
 	margin-bottom: 2em;
 	margin-right: auto;
 	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 25%;
 }
 
-.options3 td,
 .options3 a,
 .options3 a:hover,
 .options3 a:visited {
-	/*padding: 1em 3em 0 3em;*/
 	cursor: pointer;
 	font-weight: bold;
 	font-family: "Simonetta";
@@ -259,10 +275,49 @@
 	margin: 0 1em 0 1em;
 }
 
+.options3display {
+	display: flex;
+	flex-direction: column;
+}
+
+.options3display img {
+	width: 100%;
+	height: auto;
+}
+
 .growHover:hover {
 	transform: scale(1.25);
 	-webkit-transition: transform .5s ease-in-out;
 }
+
+
+@media (max-width: 600px) {
+	.options3 {
+		display: flex;
+		flex-direction: column;
+		padding: -3em 0 0 0;
+	}
+	.options3 img{
+		height: 50%;
+		width: 50%;
+	}
+	
+	.options3 a,
+	.options3 a:hover,
+	.options3 a:visited {
+		font-size: 15px;
+	}
+	
+	.hero p {
+		font-size: 20px;
+	}
+	
+	.hero {
+		height: 150vh;
+	}
+}
+
+
 
 /* FOOTER STYLES */ 
 
@@ -436,7 +491,16 @@
 }
 
 #ddBioContent {
-	font-size: 14px;	
+	font-size: 14px;
+	transition: .5s;
+}
+
+.ddBioVisible {
+
+}
+
+.ddBioHidden {
+	
 }
 
 /* LANG STYLES */

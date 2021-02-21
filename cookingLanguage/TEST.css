@@ -1,64 +1,175 @@
-.stickyIframe {
-	float: right;
+/* Variables */
+
+:root {
+	--darkBlue: #002a54; /*complementary is ?? */
+	--midBlue: #0d5eaf;
+	--lightBlue: #378bde;
+	--barelyBlue: #8ac5ff;
+	--isItBlue: #dbecff;
+	--gray: #BCC6CC;
+	--white: white;
+	--black: black;
+	--aHover: ;
+	--shadowGray: #4f5254;
+	--buttonColor: #fc5744;
+}
+
+
+/* HOMEPAGE */
+
+.homepage {
+	height: 95vh;
+}
+
+
+/* LANGUAGE SELECTOR */
+
+
+.language,
+.language p {
+	float: top;
+	background-color: var(--darkBlue);
+	color: var(--white);
+	font-family: verdana;
+	font-size: 13px;
+	padding: .5% 3% .5% 4%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+}
+
+.language a:visited {
+	color: var(--white);
+	text-decoration: underline;
+	font-family: verdana;
+}
+
+/* add shadow under header */
+.shadow-bottom {
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+	height: 7px;
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	margin-bottom: 1em;
+}
+
+.sticky {
 	position: -webkit-sticky;
 	position: -moz-sticky;
 	position: -ms-sticky;
 	position: -o-sticky;
 	position: sticky;
-	top: 4em;	
-	height: 365px;
-	transition: .5s;
+	top: 0;
+	z-index: 3;
 }
 
-.stickyIframe iframe {
-	box-shadow: 0 .75em .75em var(--shadowGray);
+#englishMode {
+	display: ;
 }
 
-.iframeExpand {
-	width: 100px;
-	height: 50px;
-	background-color: black;
-	opacity: .75;
-	position: relative;
-	clear: both;
-	box-shadow: 0 .75em .75em var(--shadowGray);
-	transition: .5s;
-	cursor: pointer;
-	margin-top: -1.75em;
+#greekMode {
+	display: ;
 }
 
-
-
-.iframeExpand p {
+.sliderStuff {
+	float: right;
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	color: white;
-	padding-top: 12px;
-	font-size: 25px;
+	align-items: center;
+	font-family: verdana;
+	color: var(--white);
+	font-size: 13px;
 }
 
-.hide {
-	top: -16em;
-}
-
-/*.iframeExpand button:after {
-	content: '\02795';
-	float: right;
+.switch {
+	position: relative;
+	width: 4em;
+	height: 2em;
+	display: inline-block;
 	
 }
 
-.iframeExpand button:focus:after {
-	content: '\2796';
-}*/
+.switch input {
+	display: none;
+}
 
-
-
-/*.iframeExpandSticky {
-	
-	box-shadow: 0 .75em .75em var(--shadowGray);
-	transition: .5s;
+.switch .slider {
+	position: absolute;
+	top: 0;  			/* all these values are 0 and position is absolute, meaning */
+	bottom: 0;			/* that the attributes take on the values of the parent element, which*/
+	left: 0;			/* is .switch in this case.*/
+	right: 0;
+	background-color: var(--lightBlue);
 	cursor: pointer;
-	float: right;
-}*/
+	border-radius: 30px;
+}
 
+.switch .slider::before {
+	content: "";
+	position: absolute;
+	height: 1.5em;
+	width: 1.5em;
+	background-color: var(--white);
+	left: .25em;
+	top: .25em;
+	transition: all .5s;
+	border-radius: 30px;
+}
+
+.switch input:checked +.slider::before {
+	left: 2.2em;
+}
+
+
+/* FOOTER STYLES */ 
+
+.footer {
+	background-color: var(--darkBlue);
+	padding: 2em;
+	color: var(--white);
+	
+}
+
+.footerTable tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	
+}
+
+.footerTable td {
+	margin-left: 2em;
+	font-family: "Simonetta";
+}
+
+.footerTable a,
+.footerTable a:visited,
+.footerTable a:hover {
+	text-decoration: none;
+	color: var(--white);
+	
+}
+
+.footerTable a[title]:hover:after {
+	content: attr(title);
+	padding: 4px 8px;
+	color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	top: 100%;
+	white-space: nowrap;
+	z-index: 2;
+	border-radius: 5px ;
+	background: rgba(0,0,0,0.5);
+}
+
+.copyright {
+	font-size: 10px;
+	float: right;
+	
+}
+
+.iconHover img:hover {
+	background-color: var(--midBlue);
+}
