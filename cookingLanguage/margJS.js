@@ -6,12 +6,14 @@ console.log('Hello world!');
 // Drop-down function
 var ddValue = document.getElementById('ddBioContent');
 
-function ddBio() { 
-	if(ddValue.style.display == 'none') {
-    ddValue.style.display = '';
-  }else if(ddValue.style.display == '') {
-    ddValue.style.display = 'none';
-  }
+function ddBio() {
+	if(ddValue.classList.contains('ddBioHidden')) {
+		ddValue.classList.add('ddBioVisible');
+		ddValue.classList.remove('ddBioHidden');
+	}else if(ddValue.classList.contains('ddBioVisible')) {
+		ddValue.classList.add('ddBioHidden');
+		ddValue.classList.remove('ddBioVisible');
+	}
 }
 
 function contactEmail() 

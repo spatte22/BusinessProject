@@ -8,6 +8,7 @@ function scrollFunction () {
 	if (window.pageYOffset > 200){
 		console.log('scrolling!');
 		document.getElementById('videoButton').style.display = 'block';
+		document.getElementById('videoButtongr').style.display = 'block';
 	}
 };
 

@@ -125,7 +125,9 @@ a:visited {
 }
 
 .fairyTaleCard img {
-	
+	max-width: 400px;
+	position: relative;
+	z-index: -1;
 }
 
 .fairyTaleCard p {
@@ -168,6 +170,11 @@ a:visited {
 	margin-bottom: 3vh;
 }
 
+.small-text {
+	font-size: 13px;
+	font-style: italic;
+}
+
 .chunk1 {
 	margin-top: 7vh;
 
@@ -178,9 +185,10 @@ a:visited {
 	padding: 1em 1em .5em .5em;
 	border-radius: 10px;
 	border: 1px solid var(--shadowGray);
-	width: 4em;
+	width: 5.2em;
 	height: 2em;
 	cursor: pointer;
+	text-align: center;
 }
 
 .chunkButton:hover,
@@ -192,9 +200,10 @@ a:visited {
 	color: var(--white);
 	border-radius: 10px;
 	border: 1px solid var(--shadowGray);
-	width: 4em;
+	width: 5.2em;
 	height: 2em;
 	cursor: pointer;
+	text-align: center;
 }
 
 .turnRed {

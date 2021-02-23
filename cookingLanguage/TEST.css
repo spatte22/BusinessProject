@@ -1,175 +1,159 @@
-/* Variables */
-
-:root {
-	--darkBlue: #002a54; /*complementary is ?? */
-	--midBlue: #0d5eaf;
-	--lightBlue: #378bde;
-	--barelyBlue: #8ac5ff;
-	--isItBlue: #dbecff;
-	--gray: #BCC6CC;
-	--white: white;
-	--black: black;
-	--aHover: ;
-	--shadowGray: #4f5254;
-	--buttonColor: #fc5744;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-
-/* HOMEPAGE */
-
-.homepage {
-	height: 95vh;
-}
-
-
-/* LANGUAGE SELECTOR */
-
-
-.language,
-.language p {
-	float: top;
-	background-color: var(--darkBlue);
-	color: var(--white);
-	font-family: verdana;
-	font-size: 13px;
-	padding: .5% 3% .5% 4%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 5;
-}
-
-.language a:visited {
-	color: var(--white);
-	text-decoration: underline;
-	font-family: verdana;
-}
-
-/* add shadow under header */
-.shadow-bottom {
-	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
-	height: 7px;
-	width: 100%;
-	z-index: 2;
-	position: absolute;
-	margin-bottom: 1em;
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: -moz-sticky;
-	position: -ms-sticky;
-	position: -o-sticky;
-	position: sticky;
-	top: 0;
-	z-index: 3;
-}
-
-#englishMode {
-	display: ;
-}
-
-#greekMode {
-	display: ;
-}
-
-.sliderStuff {
-	float: right;
-	display: flex;
-	align-items: center;
-	font-family: verdana;
-	color: var(--white);
-	font-size: 13px;
-}
-
-.switch {
-	position: relative;
-	width: 4em;
-	height: 2em;
-	display: inline-block;
-	
-}
-
-.switch input {
-	display: none;
-}
-
-.switch .slider {
-	position: absolute;
-	top: 0;  			/* all these values are 0 and position is absolute, meaning */
-	bottom: 0;			/* that the attributes take on the values of the parent element, which*/
-	left: 0;			/* is .switch in this case.*/
-	right: 0;
-	background-color: var(--lightBlue);
-	cursor: pointer;
-	border-radius: 30px;
-}
-
-.switch .slider::before {
-	content: "";
-	position: absolute;
-	height: 1.5em;
-	width: 1.5em;
-	background-color: var(--white);
-	left: .25em;
-	top: .25em;
-	transition: all .5s;
-	border-radius: 30px;
-}
-
-.switch input:checked +.slider::before {
-	left: 2.2em;
-}
-
-
-/* FOOTER STYLES */ 
-
-.footer {
-	background-color: var(--darkBlue);
-	padding: 2em;
-	color: var(--white);
-	
-}
-
-.footerTable tr {
+.reel-container {
+	height: 45em;
+	width: 100vw;
+	background-color: black;
+	overflow: hidden;
+	position: ;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between; 
-	
 }
 
-.footerTable td {
-	margin-left: 2em;
-	font-family: "Simonetta";
+
+
+
+#reel1 {
+	width: 15em;
+	height: 150%;
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
 }
 
-.footerTable a,
-.footerTable a:visited,
-.footerTable a:hover {
-	text-decoration: none;
-	color: var(--white);
-	
+#reel1-card1 {
+	width: 100%;
+	height: 20em;
+	min-height: 20em;
+		margin: 1em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood2.jpg);
+	background-size: cover;
+	border-radius: 15px;
 }
 
-.footerTable a[title]:hover:after {
-	content: attr(title);
-	padding: 4px 8px;
-	color: rgba(0,0,0,0.5);
-	position: absolute;
-	left: 0;
-	top: 100%;
-	white-space: nowrap;
-	z-index: 2;
-	border-radius: 5px ;
-	background: rgba(0,0,0,0.5);
+#reel1-card2 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood1.jpg);
+	background-size: cover;
+	border-radius: 15px;
 }
 
-.copyright {
-	font-size: 10px;
-	float: right;
-	
+#reel1-card3 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood2.jpg);
+	background-size: cover;
+	border-radius: 15px;
 }
 
-.iconHover img:hover {
-	background-color: var(--midBlue);
+#reel1-card4 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood1.jpg);
+	background-size: cover;
+	border-radius: 15px;
+}
+
+#reel1-card5 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood1.jpg);
+	background-size: cover;
+	border-radius: 15px;
+}
+
+
+
+
+
+#reel2 {
+	width: 15em;
+	height: 150%;
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+}
+
+#reel2-card1 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/meBioTest.jpg);
+	background-size: cover;
+}
+#reel2-card2 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/meBioTest.jpg);
+	background-size: cover;
+}
+
+
+
+#reel3 {
+	width: 15em;
+	height: 150%;
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+}
+
+#reel3-card1 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood2.jpg);
+	background-size: cover;
+}
+
+
+#reel3-card2 {
+	width: 100%;
+	height: 20em;
+		min-height: 20em;
+		margin: 1em;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/foodShow/instaFood1.jpg);
+	background-size: cover;
 }

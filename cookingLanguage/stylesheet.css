@@ -163,7 +163,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 500px;
+	height: 50vh;
 	width: ;
 	padding-bottom: 15vh;
 }
@@ -174,18 +174,18 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 60vh;
 	width: 100%;
 
 	/*border-top: 1px solid var(--black);*/
 }
 
 .heroFood {
-	background-image: url(images/foodShow/GreekFood.jpeg);
+	background-image: url(images/foodShow/GreekFood2.jpeg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 60vh;
 	width: 100%;
 }
 
@@ -194,16 +194,16 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 60vh;
 	width: 100%;
 }
 
 .heroArt {
-	background-image: url(images/artShow/abstract1.jpg);
+	background-image: url(images/artShow/abstract1.1.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 60vh;
 	width: 100%;
 }
 
@@ -213,7 +213,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 60vh;
 	width: 100%;
 }
 
@@ -492,16 +492,20 @@
 
 #ddBioContent {
 	font-size: 14px;
-	transition: .5s;
+
 }
 
 .ddBioVisible {
-
+	height: auto;
+	visibility: visible;
 }
 
 .ddBioHidden {
-	
+	height: 0px;
+	visibility: hidden;
 }
+
+
 
 /* LANG STYLES */
 
