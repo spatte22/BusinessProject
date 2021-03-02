@@ -4,6 +4,127 @@
 	box-sizing: border-box;
 }
 
+
+.gsapTest {
+	margin-bottom: 10em;
+	background-color: black;
+	overflow: hidden;
+	height: 45em;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+}
+
+#column1 {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: reverse-column;
+	transform: skewX(-10deg);
+	background-color: ;
+}
+
+#column2 {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+	background-color: ;
+}
+
+#column3 {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-15deg);
+	background-color: ;
+}
+
+.newPic {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+}
+
+#pic1,
+#pic2,
+#pic3,
+#pic4 {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 800px;
+}
+#pic5,
+#pic6,
+#pic7,
+#pic8 {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: -400px;
+}
+#pic9,
+#pic10,
+#pic11,
+#pic12 {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reel-container {
 	height: 45em;
 	width: 100vw;
@@ -12,6 +133,18 @@
 	position: ;
 	display: flex;
 	flex-direction: row;
+}
+
+@keyframes reel1 {
+	0% {top: 800px;}
+	100% {top: 0px;}
+	
+}
+
+@keyframes reel2 {
+	0% {top: 0px;}
+	100% {top: 800px;}
+	
 }
 
 
@@ -36,6 +169,9 @@
 	background-image: url(images/foodShow/instaFood2.jpg);
 	background-size: cover;
 	border-radius: 15px;
+		animation: reel1 16s infinite;
+		position: absolute;
+		animation-timing-function: linear;
 }
 
 #reel1-card2 {
@@ -48,6 +184,11 @@
 	background-image: url(images/foodShow/instaFood1.jpg);
 	background-size: cover;
 	border-radius: 15px;
+		animation: reel2 16s infinite;
+		animation-delay: 2s;
+		position: absolute;
+		top: 21em;
+		animation-timing-function: linear;
 }
 
 #reel1-card3 {
@@ -60,6 +201,11 @@
 	background-image: url(images/foodShow/instaFood2.jpg);
 	background-size: cover;
 	border-radius: 15px;
+		animation: reel1 16s infinite;
+		animation-delay: 6s;
+		position: absolute;
+		top: 42em;
+		animation-timing-function: linear;
 }
 
 #reel1-card4 {
@@ -72,6 +218,10 @@
 	background-image: url(images/foodShow/instaFood1.jpg);
 	background-size: cover;
 	border-radius: 15px;
+		animation: reel1 16s infinite;
+		animation-delay: 10s;
+		position: absolute;
+		animation-timing-function: linear;
 }
 
 #reel1-card5 {
@@ -84,6 +234,10 @@
 	background-image: url(images/foodShow/instaFood1.jpg);
 	background-size: cover;
 	border-radius: 15px;
+		animation: reel1 16s infinite;
+		animation-delay: 14s;
+		position: absolute;
+		animation-timing-function: linear;
 }
 
 

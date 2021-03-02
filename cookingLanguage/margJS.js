@@ -1,9 +1,5 @@
-console.log('Hello world!');
-
-
-
-
 // Drop-down function
+
 var ddValue = document.getElementById('ddBioContent');
 
 function ddBio() {
@@ -14,7 +10,19 @@ function ddBio() {
 		ddValue.classList.add('ddBioHidden');
 		ddValue.classList.remove('ddBioVisible');
 	}
-}
+};
+
+var ddValuegr = document.getElementById('ddBioContentgr');
+
+function ddBiogr() {
+	if(ddValuegr.classList.contains('ddBioHidden')) {
+		ddValuegr.classList.add('ddBioVisible');
+		ddValuegr.classList.remove('ddBioHidden');
+	}else if(ddValuegr.classList.contains('ddBioVisible')) {
+		ddValuegr.classList.add('ddBioHidden');
+		ddValuegr.classList.remove('ddBioVisible');
+	}
+};
 
 function contactEmail() 
 {
@@ -48,6 +56,31 @@ function showSlides(n) {
   }
   
   slides[slideIndex-1].style.display = "block";  
+  
+}
+
+
+var slideIndexgr = 1;
+showSlidesgr(slideIndexgr);
+
+function plusSlidesgr(m) {
+  showSlidesgr(slideIndexgr += m);
+}
+
+function currentSlidegr(m) {
+  showSlidesgr(slideIndexgr = m);
+}
+
+function showSlidesgr(m) {
+  var h;
+  var slides = document.getElementsByClassName("mySlidesgr");
+  if (m > slides.length) {slideIndexgr = 1}    
+  if (m < 1) {slideIndexgr = slides.length}
+  for (h = 0; h < slides.length; h++) {
+      slides[h].style.display = "none";  
+  }
+  
+  slides[slideIndexgr-1].style.display = "block";  
   
 }
 
