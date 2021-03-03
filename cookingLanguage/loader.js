@@ -1,12 +1,18 @@
 const loadingPage = document.querySelector('.loading-page');
 
 function init() {
-	setTimeout(() => {
+	if(localStorage.getItem("hasVisited") === null){
+		setTimeout(() => {
+			loadingPage.style.opacity = 0;
+			loadingPage.style.display = 'none';
+			localStorage.setItem("hasVisited", "yes");
+		}, 4050);
+	}else {
 		loadingPage.style.opacity = 0;
 		loadingPage.style.display = 'none';
-	}, 4050);
+		console.log("yes!");
+		
+	}
 }
 
 init();
-
-
