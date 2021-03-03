@@ -1536,6 +1536,11 @@ h1 {
 		width: 75%;
 	}
 	
+	.options3 {
+		margin-top: 7em;
+	}
+	
+	
 	.options3 a,
 	.options3 a:hover,
 	.options3 a:visited {
@@ -1547,7 +1552,88 @@ h1 {
 	text-decoration: none;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	margin: 0 1em 0 1em;
-}
+	}
+	
+	.heroLang {
+	background-image: url(images/languageShow/poseidonas.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25;
+	width: ;
+	padding-bottom: 15vh;
+	}
+	.heroLang2 {
+	/*background-image: url(images/languageShow/meBioTest2.jpg);*/
+	background-image: url(images/languageShow/naos.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+
+	/*border-top: 1px solid var(--black);*/
+	}
+
+	.heroFood {
+	background-image: url(images/foodShow/GreekFood2.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+	}
+
+	.heroFood2 {
+	background-image: url(images/foodShow/oranges.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+	}
+
+	.heroArt {
+	background-image: url(images/artShow/abstract1.1.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+	}
+
+	.heroArt2 {
+	background-image: url(images/artShow/abstract2.jpg);
+	background-color: ;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+	}
+	
+	.slideshow {
+		max-width: 250px;
+	}
+	
+	
+	.language {
+	float: top;
+	background-color: var(--darkBlue);
+	color: var(--white);
+	font-family: verdana;
+	font-size: 20px;
+	padding: .5% 3% .5% 4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+	}
+	
+	.nav li {
+		font-size: 22px;
+	}
 }
 
 @media (max-width: 750px) {
@@ -1565,6 +1651,10 @@ h1 {
 	.options3 a:hover,
 	.options3 a:visited {
 		font-size: 15px;
+	}
+	
+	.nav li {
+		font-size: 22px;
 	}
 	
 	.hero p {

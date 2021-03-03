@@ -128,6 +128,8 @@ a:visited {
 	max-width: 400px;
 	position: relative;
 	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .fairyTaleCard p {
@@ -231,6 +233,19 @@ a:visited {
 }
 
 @media (max-width: 750px) {
+	.fairyTaleCard {
+		width: 80vw;
+		
+	}
+	.fairyTaleCard:hover {
+		width: 80vw;
+		transform: scale(1.01);
+		transition: .3s ease-in-out;
+	}
+	.fairyTaleCard img {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.fairyTaleCardsContainer {
 		height: auto;
 		margin: auto;
