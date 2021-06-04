@@ -232,6 +232,16 @@ a:visited {
 	
 }
 
+@media (max-width: 1100px) {
+	.stickyIframe {
+		top: 10em;
+	}
+	
+	.hide {
+		top: -3.5em;
+	}
+}
+
 @media (max-width: 750px) {
 	.fairyTaleCard {
 		width: 80vw;
@@ -273,5 +283,7 @@ a:visited {
 	margin-bottom: 1vh;
 	margin-top: -1vh;
 	z-index: 2;
-}
+	}
+	
+	
 }

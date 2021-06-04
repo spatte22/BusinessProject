@@ -1,0 +1,429 @@
+/* Variables */
+
+:root {
+	--darkBlue: #002a54; /*complementary is ?? */
+	--midBlue: #0d5eaf;
+	--lightBlue: #378bde;
+	--barelyBlue: #8ac5ff;
+	--isItBlue: #dbecff;
+	--gray: #BCC6CC;
+	--white: white;
+	--black: black;
+	--aHover: ;
+	--shadowGray: #4f5254;
+	--buttonColor: #fc5744;
+}
+
+
+/*  FOODSHOW   */
+
+.foodshow {
+	border-top: 1px solid black;
+	background-color: var(--darkBlue);
+	overflow: hidden;
+	height: 45em;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.foodshow h2 {
+	font-size: 2em;
+	color: var(--white);
+	position: relative;
+	top: 10px;
+	left: 30px;
+	z-index: 1;
+	text-shadow: 2px 2px black;
+}
+
+#foodshow-column1 {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: reverse-column;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+#foodshow-column2 {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+#foodshow-column3 {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+
+#foodpic1,
+#foodpic2,
+#foodpic3,
+#foodpic4 {
+	height: 20em;
+	width: 15em;
+	background-color: ;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 800px;
+}
+#foodpic5,
+#foodpic6,
+#foodpic7,
+#foodpic8 {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: -400px;
+}
+#foodpic9,
+#foodpic10,
+#foodpic11,
+#foodpic12 {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 800px;
+}
+
+#foodpic1 {
+	background-image: url(../images/foodShow/instaFood1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic2 {
+	background-image: url(../images/foodShow/instaFood2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic3 {
+	background-image: url(../images/foodShow/instaFood3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#foodpic4 {
+	background-image: url(../images/foodShow/instaFood4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#foodpic5 {
+	background-image: url(../images/foodShow/instaFood5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic6 {
+	background-image: url(../images/foodShow/instaFood6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#foodpic7 {
+	background-image: url(../images/foodShow/instaFood7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic8 {
+	background-image: url(../images/foodShow/instaFood8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic9 {
+	background-image: url(../images/foodShow/instaFood9.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic10 {
+	background-image: url(../images/foodShow/instaFood10.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic11 {
+	background-image: url(../images/foodShow/instaFood11.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic12 {
+	background-image: url(../images/foodShow/instaFood12.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+			/* foodshow greekmode */
+
+#foodshow-column1gr {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: reverse-column;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+#foodshow-column2gr {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+#foodshow-column3gr {
+	width: 15em;
+	height: 55em;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: column;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+
+#foodpic1gr,
+#foodpic2gr,
+#foodpic3gr,
+#foodpic4gr {
+	height: 20em;
+	width: 15em;
+	background-color: ;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 800px;
+}
+#foodpic5gr,
+#foodpic6gr,
+#foodpic7gr,
+#foodpic8gr {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: -400px;
+}
+#foodpic9gr,
+#foodpic10gr,
+#foodpic11gr,
+#foodpic12gr {
+	height: 20em;
+	width: 15em;
+	background-color: green;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 800px;
+}
+
+#foodpic1gr {
+	background-image: url(../images/foodShow/instaFood2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic2gr {
+	background-image: url(../images/foodShow/instaFood1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic3gr {
+	background-image: url(../images/foodShow/instaFood3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#foodpic4gr {
+	background-image: url(../images/foodShow/instaFood4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#foodpic5gr {
+	background-image: url(../images/foodShow/instaFood5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic6gr {
+	background-image: url(../images/foodShow/instaFood6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#foodpic7gr {
+	background-image: url(../images/foodShow/instaFood7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic8gr {
+	background-image: url(../images/foodShow/instaFood8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic9gr {
+	background-image: url(../images/foodShow/instaFood9.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic10gr {
+	background-image: url(../images/foodShow/instaFood10.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic11gr {
+	background-image: url(../images/foodShow/instaFood11.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#foodpic12gr {
+	background-image: url(../images/foodShow/instaFood12.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+/* RECIPES */
+
+.recipes-container {
+	height: auto;
+	
+}
+
+.recipe {
+	
+}
+
+#food-embed  {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+@media (min-width: 1340px) {
+	#food-embed {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 1380px) {
+	#food-embed {
+		margin-left: 40px;
+	}
+}
+
+@media (min-width: 1420px) {
+	#food-embed {
+		margin-left: 60px;
+	}
+}
+
+@media (min-width: 1460px) {
+	#food-embed {
+		margin-left: 80px;
+	}
+}
+
+@media (min-width: 1500px) {
+	#food-embed {
+		margin-left: 100px;
+	}
+}
+
+@media (min-width: 1550px) {
+	#food-embed {
+		margin-left: 125px;
+	}
+}
+
+@media (min-width: 1600px) {
+	#food-embed {
+		margin-left: 150px;
+	}
+}
+
+@media (min-width: 1700px) {
+	#food-embed {
+		margin-left: 200px;
+	}
+}
+
+/*gr mode */
+
+@media (min-width: 1340px) {
+	#food-embed-gr {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 1380px) {
+	#food-embed-gr {
+		margin-left: 40px;
+	}
+}
+
+@media (min-width: 1420px) {
+	#food-embed-gr {
+		margin-left: 60px;
+	}
+}
+
+@media (min-width: 1460px) {
+	#food-embed-gr {
+		margin-left: 80px;
+	}
+}
+
+@media (min-width: 1500px) {
+	#food-embed-gr {
+		margin-left: 100px;
+	}
+}
+
+@media (min-width: 1550px) {
+	#food-embed-gr {
+		margin-left: 125px;
+	}
+}
+
+@media (min-width: 1600px) {
+	#food-embed-gr {
+		margin-left: 150px;
+	}
+}
+
+@media (min-width: 1700px) {
+	#food-embed-gr {
+		margin-left: 200px;
+	}
+}
+
